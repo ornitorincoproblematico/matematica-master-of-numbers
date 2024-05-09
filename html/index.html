@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="topBar2">
+        <button onclick="window.location.href='index.html'" ><img src="../images/menu finaleù.png" height="50" width="145"></button>
+        <button onclick="window.location.href='giochi.html'"><img src="../images/giochi button.png" height="50" width="145" Border="0"></button>
+        <button onclick="window.location.href='spiegazioni.html'"><img src="../images/spiegazioni_image.png" height="50" width="145" Border="0"></button>
+        <button onclick="window.location.href='chisiamo.html'"><img src="../images/chisiamo_image.png" height="50" width="145" Border="0"></button>
+    </div> 
+    <h1>Benvenuto alla Home Page</h1>
+
+    <!-- Image Map Integration -->
+    <img class="tree" src="../images/albero-di-pitagora.png" usemap="#image-map" alt="Map" width="637" height="434">
+        
+    <map name="image-map">
+        <!-- Define clickable areas -->
+        <area shape="rect" coords="268,320,370,425" href="chisiamo.html" alt="chi siamo?">
+        <area shape="poly" coords="216,268,268,216,318,268,268,320" href="#" alt="" onclick="alert('Menu 2 clicked')">    
+    </map>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
