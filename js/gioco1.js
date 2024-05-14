@@ -40,7 +40,7 @@ function spawnTarget() {
 
     const targetCounter = document.createElement('div');
     targetCounter.className = 'targetCounter';
-    targetCounter.textContent = '6';
+    targetCounter.textContent = '5';
     const targetCounterX = targetWidth/3;
     const targetCounterY = -targetHeight;
     targetCounter.style.left = targetCounterX + 'px';
@@ -73,17 +73,7 @@ function spawnTarget() {
     gameContainer.appendChild(newTarget);
 }
 
-function spawnTargetCounter(target, targetX, targetY) {
-    const targetCounter = document.createElement('div');
-    targetCounter.className = 'targetCounter';
-    targetCounter.textContent = '6';
-    targetCounter.style.left = (targetX + targetWidth/3) + 'px';
-    targetCounter.style.top = (targetY + targetHeight/3) + 'px';
-    targetCounter.style.position = 'absolute'; // Ensure this is set if not already in your CSS
 
-    target.appendChild(targetCounter);
-    gameContainer.appendChild(target);
-}
 
 function decreaseCounters() {
     // Get all counters from the gameContainer element
@@ -101,5 +91,5 @@ function decreaseCounters() {
     }
 }
 
-spawnTargetInterval = setInterval(spawnTarget, 500);
+spawnTargetInterval = setInterval(spawnTarget, 350);
 decreaseCountersInterval = setInterval(decreaseCounters, 1000);
